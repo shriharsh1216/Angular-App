@@ -1,0 +1,168 @@
+<app-nav> </app-nav>
+<div class="container-fluid" style="background-color:#ebebeb ;">
+    <div class="row" style="background-color:#ebebeb;height: fit-content;justify-content: center; ">
+        <div  >
+            <img   src='./assets/userlogo.png' alt="" style="padding:2% ; height:90px; ">
+        </div>
+    </div>
+    <br>
+    <div class="row" style="justify-content:center; font-size: 30px;">
+        
+        {{this.profileResponse.company}}
+         
+    </div>
+    
+    <div class="row" style="background-color:#ebebeb; height:50px">
+        <div class="col-lg-3">
+            <button mat-raised-button class="btn blue-nav-btns"  routerLink="/sellerproducts"  style="width:fit-content; color: white;">
+                View My Products
+               </button>
+               &nbsp;
+               <button mat-raised-button class="btn blue-nav-btns"  routerLink="/instructorlogin" style="width:fit-content; color: white;">
+                Add/Update Info
+               </button>
+        </div>
+        <div class="col-lg-3"></div>
+        <div class="col-lg-3"></div>
+        <div class="col-lg-3" style="justify-content:end ;">
+            
+        </div>
+        
+        
+        
+          
+    </div>
+    <br>
+    <div class="row" style="background-color:#ebebeb; font-size:15px; justify-content: center;">
+        
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4" style="font-size:20px ;">
+            <button mat-raised-button class="btn blue-nav-btns" style="color: white;width: 100%;" (click)="getProfile()">
+            Personal Info
+              </button>
+              <br><br>
+
+          
+            Full Name: {{this.profileResponse.full_name}}
+            <br><br>
+            Industry Type: {{this.profileResponse.industry}}
+            <br><br>
+            Category Type: {{this.profileResponse.category}}
+            <br><br>
+            User Name: {{this.profileResponse.user.username}}
+            <br><br>
+            Email ID: {{this.profileResponse.user.email}}
+            <br><br>
+            Contact No.: {{this.profileResponse.user.contact_number}}
+            <br><br>
+            GST No.: {{this.profileResponse.user.company_gst_number}}
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4"  style="font-size:20px">
+            <button mat-raised-button class="btn blue-nav-btns"   style="color: white;width: 100%;">
+                Address
+              </button>
+              <br><br>
+            City: {{this.profileResponse.city}}
+            <br><br>
+            District: {{this.profileResponse.district}}
+            <br><br>
+
+            County: {{this.profileResponse.county}}
+            <br><br>
+            State: {{this.profileResponse.state}}
+            <br><br>
+            Pincode: {{this.profileResponse.pinCode}}
+
+
+            
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4" style="font-size: 20px;">
+            <button mat-raised-button class="btn blue-nav-btns"   style="width:100% ; color: white;">
+                Bank Details
+              </button>
+              <br><br>
+            Account: {{this.profileResponse.acc_number}}
+            <br><br>
+            IFSC Code: {{this.profileResponse.ifsc_code}}
+            <br><br>
+            Bank Name: {{this.profileResponse.bank_name}}
+            <br><br>
+            Branch Name: {{this.profileResponse.branch_name}}
+
+            
+        </div>
+        
+    </div>
+</div>
+<br>
+<div class="row" style="background-color: rgb(2, 33, 23); height:10px ;"></div>
+<div class="row" style="background: linear-gradient(106deg, #37D200 40.28%, #1E7300 100%);
+; color: azure;">
+    
+    <div class="col-lg-1 col-xl-1"></div>
+    <div class="col-lg-3 col-xl-3" >
+        <br>
+
+        <div class="" style="color: azure;">
+            Find Us
+        </div>
+        <br>
+
+        <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+        <br>
+        <p><i ></i> +91-9999878398  </p>
+        
+        <p><i></i> info@example.com  </p>
+        <br>
+    </div>
+    <div class="col-lg-1 col-xl-1" ></div>
+    <div class="col-lg-3 col-xl-3" style="color: azure;">
+        <br>
+        <div class="">Home</div>
+        <br>
+        <div class="">About Us</div>
+        <br>
+        <div class="">Join Us</div>
+        <br>
+        <div class="">All Products</div>
+        <br>
+        <div class="">Somrthing</div>
+        
+    
+    
+    
+    
+    </div>
+    
+    <div class="col-lg-4 col-xl-4">
+        <br>
+        <div class="">Terms and Conditions</div>
+        <br>
+        <div class="">Privacy Policy</div>
+        <br>
+        <div class="">Sell with Us</div>
+        <br>
+        <div class="">Become a partner</div>
+        <br>
+        <div class="">Somrthing</div>
+        
+    
+    </div>
+    
+</div>
+<div class="row" style="background-color: rgb(2, 33, 23); height: 80px; ;">
+    <div class="container">
+    
+        <!--foote_bottom_ul_amrc ends here-->
+        <p class="text-center" style="color:azure ;">Copyright @2017 | Designed With by <a href="#">Invebuy</a></p>
+        
+        <ul class="social_footer_ul">
+        <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <!--social_footer_ul ends here-->
+        </div></div>
+
+
+

@@ -1,0 +1,29 @@
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of productResponse">
+            <div class="card col-md-3">
+                <img onerror="this.src='./assets/14.jpeg'" src="{{item.imgUrl1}}" alt="">
+              Name:  <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.product_name}}</h5>
+             Description:   <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
+                <p><strong>Price:</strong> ${{item.price}}</p>
+              Quantity:  <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.quantity}}</p>
+               <!-- Serial Number: <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.serial_number}}</p>
+              Category:  <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.category}}</p> -->
+              <div class="icon-bar">
+               
+                <a href="#"><i class="fa fa-edit" style="font-size:26px"></i></a>
+                <a href="#"><i class="fa fa-trash" style="font-size:26px;padding-left: 10%;"></i></a>
+                <a href="#"> <i class="material-icons" style="font-size:26px;padding-left: 10%;">zoom_in</i>
+                 
+                </a>
+              </div> 
+              <button class="btn btn-primary" (click)="addImages(item.id)">Add Images</button>
+             
+                <button class="btn btn-primary" (click)=addtocart(item.id)>View Details</button>
+               
+            </div>
+        </ng-container>
+
+    </div>
+</div>

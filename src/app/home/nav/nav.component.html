@@ -1,0 +1,55 @@
+<div class="container-fluid">
+  <div class="row" style="background-color:#ebebeb ;">
+    <div class="co-12 col-xs-12 col-md-12 col-lg-12 col-xl-12" style="background-color:#ebebeb" >
+          <nav class="navbar navbar-expand-md navbar-dark bg-white mb-3" style="background-color:#ebebeb">
+        <a href="#" class="navbar-brand" style="background-color:#ebebeb"> </a>
+        <button
+          type="button"
+          class="navbar-toggler bar" style="background-color:#ebebeb"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+            <img class="pd-lt-20" src="./assets/IB1.jpg"  routerLink="/aboutus" style="height: 50px; border-radius:10px ;left:-50px ; box-shadow:black ;"alt=""/>
+            <a class="pd-lt-20 pd-xl-20 text-blue nav-text" routerLink="/courses" style="color:black;">Home</a>
+            <a class="pd-lt-20 nav-text" routerLink="/aboutus" style="color:black;">About Us</a>
+            <a class="pd-lt-20 nav-text" routerLink="/cartDetails" style="color:black;">Cart</a>
+            <a class="pd-lt-20 nav-text" routerLink="/courseslist" style="color:black;">Products</a>
+            
+            <a class="pd-lt-20 nav-text" routerLink="/coursescategory" style="color:black;">Dashboard</a>
+
+            
+            <div class="input-group" style="top:10px ;">
+              <div class="form-outline">
+                <input type="search" id="form1" class="form-control" style="width: 120px; ;" />
+                
+                  <i class="fas fa-search"></i>
+                  
+              </div>
+              &nbsp;&nbsp;&nbsp;
+            </div>
+           
+            <a class="pd-lt-20 nav-text" routerLink="/signin" *ngIf="signin" style="color:black;">Sign In</a>
+            <a class="pd-lt-20 nav-text" routerLink="/signout" *ngIf="signOut" style="color:black;">Sign Out</a>
+
+            
+           
+<!--
+            <button mat-raised-button class="btn blue-nav-btns"  style=""routerLink="/signin" *ngIf="signin">Sign In</button>
+            <button class="btn blue-nav-btns" style=""  *ngIf="signin" routerLink="/signup">Sign Up</button>
+            <button class="btn blue-nav-btns" style=""  *ngIf="signOut" routerLink="/signout">Sign out</button>
+
+-->
+
+
+
+          </div>
+        </div>
+      </nav>
+    </div>
+    </div>
+
+</div>

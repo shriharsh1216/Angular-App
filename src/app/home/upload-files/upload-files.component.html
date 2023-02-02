@@ -1,0 +1,66 @@
+<app-nav></app-nav>
+
+<div class="container-fluid" style="background-color: #ebebeb;">
+
+<div class="row">
+  <div class="col-lg-6 col-xl-6">
+    <div fxFlex="100" fxFlex.gt-sm="50" fxFlex.sm="60" class="flex-p">
+ 
+      <form [formGroup]="formData">
+        <!-- <input type="file"
+               id="file[0]"
+               (change)="handleFileInput1($event)"> -->
+               <label class="btn btn-default">
+                <input  id="file[0]" type="file"  (change)="handleFileInput1($event)" />
+              </label>
+        <!-- <input type="file"
+               id="file[1]"
+               (change)="handleFileInput2($event)"> -->
+        <div fxLayout="row" fxLayoutAlign="center">
+          <button mat-raised-button color="primary" (click)="uploadFile1()" type="submit">Upload Files Here 1</button>
+        </div>
+
+        <label class="btn btn-default">
+          <input  id="file[0]" type="file"  (change)="handleFileInput2($event)" />
+        </label>
+        <div fxLayout="row" fxLayoutAlign="center">
+          <button mat-raised-button color="primary" (click)="uploadFile2()" type="submit">Upload Files Here 2</button>
+        </div>
+
+
+        <label class="btn btn-default">
+          <input  id="file[0]" type="file"  (change)="handleFileInput3($event)" />
+        </label>
+        <div fxLayout="row" fxLayoutAlign="center">
+          <button mat-raised-button color="primary"  (click)="uploadFile3()"type="submit">Upload Files Here 3</button>
+        </div>
+
+
+        <label class="btn btn-default">
+          <input  id="file[0]" type="file"  (change)="handleFileInput4($event)" />
+        </label>
+        <div fxLayout="row" fxLayoutAlign="center">
+          <button mat-raised-button color="primary" (click)="uploadFile4()"type="submit">Upload Files Here 4</button>
+        </div>
+
+
+        <label class="btn btn-default">
+          <input  id="file[0]" type="file"  (change)="handleFileInput5($event)" />
+        </label>
+        <div fxLayout="row" fxLayoutAlign="center">
+          <button mat-raised-button color="primary" (click)="uploadFile5()"type="submit">Upload Files Here 5</button>
+        </div>
+
+
+      </form>
+  </div>
+  
+  </div>
+  <div class="col-lg-6 col-xl-6">
+    Hihih
+
+  </div>
+
+
+</div>
+</div>

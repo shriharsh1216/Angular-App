@@ -1,0 +1,220 @@
+<app-nav></app-nav>
+<div class="row mg-0" style="background-color:#ebebeb ;">
+  <div class="col-lg-7 left-div" >
+   
+    <div class="row">
+      
+      <div class="col-lg-11">
+        
+        <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+          <div class="row">
+            <button mat-raised-button class="btn blue-nav-btns pd-lt-10" style="width:80%; height:55px; color: white;">
+              Seller Sign Up
+            </button>
+          
+            <div class="col-lg-12">
+              <mat-form-field class="full-length" appearance="none" style="width: 300px;">
+                <input
+                  matInput
+                  placeholder="Username*"
+                  class="bt-input form-control"
+                  formControlName="username"
+                  type="text"
+                />
+                <mat-error class="error-message">
+                  Username Required Add a unique username Ex. CompanyName123</mat-error
+                >
+              </mat-form-field>
+            </div>
+            <div class="col-lg-12">
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-5">
+              <mat-form-field class="full-length" appearance="none"style="width: 300px;">
+                <input
+                  matInput
+                  placeholder="Corporate Mail ID*"
+                  formControlName="email"
+                  class="bt-input form-control"
+                  type="text"
+                />
+                <mat-error class="error-message"> Corporate Mail ID Required</mat-error>
+              </mat-form-field>
+            </div>
+            <button  mat-raised-button  class="blue-nav-btns" style=" color: white; height: 100px;" target="_blank">Generate otp
+            </button>
+            
+            <select formControlName="role" class="space form-control" style="width: 300px;">  
+              <option disabled>Roles</option>  
+              <option>user</option> 
+              <option>admin</option> 
+              <option>seller</option>  
+          </select>  
+            <div class="col-lg-5">
+              <mat-form-field class="full-length" appearance="none" style="width:100px ;">
+                <input
+                  matInput
+                  placeholder="OTP*"
+                  class="bt-input form-control"
+                  formControlName="mobileOtp"
+                  minlength="10"
+                  maxlength="10"
+                  type="number"
+                />
+                <button  mat-raised-button  class=" btn blue-nav-btns" style=" color: white; top:2px ;" target="_blank" (click)="verifyOTP(titleInput.value)">verify otp
+                </button>
+                <mat-error class="error-message">
+                  OTP</mat-error
+                >
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-5">
+              <mat-form-field class="full-length" appearance="none" style="width: 300px;">
+                <input
+                  matInput
+                  placeholder="Company GSTIN*"
+                  class="bt-input form-control"
+                  type="text"
+                  formControlName="company_gst_number"
+                />
+                <mat-error class="error-message">Company GSTIN Required</mat-error>
+              </mat-form-field>
+            </div>
+            <div class="col-lg-5">
+             <!-- <mat-form-field class="full-length" appearance="none" style="width:150px ;left: 15px;">
+                <input
+                  matInput
+                  placeholder="OTP*"
+                  class="bt-input form-control"
+                  formControlName="mobileNo"
+                  minlength="10"
+                  maxlength="10"
+                  type="text"
+                />
+                <mat-error class="error-message">
+                  OTP</mat-error
+                >
+              </mat-form-field>-->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-5">
+              <mat-form-field class="full-length" appearance="none" style="width:300px ;" >
+                <input
+                  matInput
+                  placeholder="Contact Number*"
+                  class="bt-input form-control"
+                  type="text"
+                  #titleMobile
+                  formControlName="contact_number"
+                  [(ngModel)]="mobileNumber"
+                />
+                <mat-error class="error-message">Contact Number Required</mat-error>
+              </mat-form-field>
+            </div>
+            <button mat-raised-button class="btn blue-nav-btns" style=" color: white; height: 100px ;" target="_blank" (click)="sendOTP(titleMobile.value)">Generate otp
+            </button>
+            
+           
+            <div class="col-lg-5">
+              <mat-form-field class="full-length" appearance="none" style="width:100px ;">
+                <input
+                  matInput
+                  placeholder="OTP*"
+                  class="bt-input form-control"
+                  #titleInput
+                  formControlName="mobileOTP"
+                  [(ngModel)]="otpValueMob"
+                  minlength="10"
+                  maxlength="10"
+                  type="number"
+                />
+                
+                <button  mat-raised-button  class=" btn blue-nav-btns" style=" color: white; top:2px ;" target="_blank" (click)="verifyOTP(titleInput.value)">verify otp
+                </button>
+               
+                <mat-error class="error-message">
+                  OTP</mat-error
+                >
+              </mat-form-field>
+             <!-- <mat-form-field class="full-length" appearance="none">
+                <mat-select
+                  class="bt-input custom-field form-control"
+                  placeholder="Gender*"
+                  formControlName="gender"
+                >
+                  <mat-option value="Male">Male</mat-option>
+                  <mat-option value="Female">Female</mat-option>
+                  <mat-option value="Other">Other</mat-option>
+                </mat-select>
+                <mat-error class="error-message"
+                  >Please Select Gender</mat-error
+                >
+              </mat-form-field> -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-5">
+              
+            </div>
+            <div class="col-lg-5">
+              
+                  </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-5">
+              <mat-form-field class="full-length" appearance="none" style="width: 300px;">
+                <input
+                  matInput
+                  [type]="hideEyeiconconfirmpassword ? 'password' : 'text'"
+                  class="bt-input form-control"
+                  formControlName="password"
+                  placeholder="Password"
+                />
+                <button
+                  mat-icon-button
+                  matSuffix
+                  (click)="
+                    hideEyeiconconfirmpassword = !hideEyeiconconfirmpassword
+                  "
+                  [attr.aria-label]="'Hide password'"
+                  [attr.aria-pressed]="hideEyeiconconfirmpassword"
+                >
+                  <mat-icon>{{
+                    hideEyeiconconfirmpassword ? "visibility_off" : "visibility"
+                  }}</mat-icon>
+                </button>
+                <mat-error class="error-message"
+                  >Confirm Password Required</mat-error
+                >
+               
+                
+              </mat-form-field>
+            </div>
+            <br>
+            <div class="col-lg-5 form-button">
+              <button (click)="signUp()" [disabled]="isDisabled"
+              mat-raised-button class="btn blue-nav-btns pd-lt-10" style="width: 150px; ;left:80px; color: white;"
+              >Sign Up
+            </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-5 right-div" style="background-color:#ebebeb; left:-8%;" > 
+    
+      <img
+        src="./assets/Frame2419.jpg"
+        class="image"
+        alt=""
+      />
+    </div>
+  
+
+       
+<app-footer></app-footer>

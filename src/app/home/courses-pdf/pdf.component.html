@@ -1,0 +1,82 @@
+<app-nav></app-nav>
+<div class="container-fluid">
+ 
+  
+
+    
+   
+ 
+    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6" style="height: 100px; ;">
+      <table class="table align-middle mb-0" >
+        <thead>
+          <tr>
+           <th> category </th>
+
+           <th>company</th>
+
+            <th>dateCreated</th>
+
+              <th>description</th>
+
+                <th>id</th>
+
+                    <th>lastUpdated</th>
+
+                      <th>location</th>
+
+                        <th>price</th>
+
+                          <th>product_name</th>
+
+                            <th>quantity</th>
+
+                              <th>serial_number</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            
+          </tr>
+          <tr *ngFor="let item of profileProductResponse">
+           
+            <td>
+            
+              {{item.category}}
+            </td>
+            <td>
+              {{item.company}}
+             
+             </td>
+             <td>
+            
+              {{item.dateCreated}}
+             </td>
+            <td>  {{item.description}}</td>
+            <td>  {{item.id}}</td>
+            <td>  {{item.lastUpdated}}</td>
+            <td>  {{item.location}}</td>
+            <td>  {{item.price}}</td>
+            <td>  {{item.product_name}}</td>
+            <td> {{item.quantity}}</td>
+            <td>  {{item.serial_number}}</td>
+
+            <td>
+              <button
+                      type="button"
+                      class="btn btn-link btn-rounded btn-sm fw-bold"
+                      mdbRipple rippleColor="dark"
+                      >
+                Edit
+              </button> 
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+   
+
+
+
+</div>
+<app-footer></app-footer>

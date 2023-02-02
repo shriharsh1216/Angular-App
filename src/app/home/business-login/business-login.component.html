@@ -1,0 +1,113 @@
+<app-nav></app-nav>.
+  <div class="container-fluid" style="background-color: #ebebeb;">
+    
+    <div class="row space" style="background-color: #ebebeb;">
+      <button     mat-raised-button class="btn blue-nav-btns pd-lt-10" style="left:20px;top: 10px; width: 50%; height:55px; color: white;">
+        Add New Product
+      </button>
+
+    </div>
+    <br>
+    <div class="row space" >
+      <!--first row-->
+      <form [formGroup]="businessLoginform" >
+      <div class="col-xs-12 col-lg-12 col-md-6 col-xl-6" style=" border-color: #ebebeb; background-color:#ebebeb;">
+        <mat-form-field class="full-length" style="width:300px ;" appearance="none">
+          <input
+            matInput
+            placeholder="Enter Product name"
+            class="bt-input form-control"
+            type="text"
+            formControlName="product_name"
+          />
+          <mat-error>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name Required</mat-error>
+        </mat-form-field>
+        <mat-form-field class="full-length" style="width:300px ;" appearance="none">
+          <input
+            matInput
+            placeholder="Enter description"
+            class="bt-input form-control"
+            type="text"
+            formControlName="description"
+          />
+          <mat-error>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description Required</mat-error>
+        </mat-form-field>
+        <mat-form-field class="full-length" style="width:300px ;" appearance="none">
+          <input
+            matInput
+            placeholder="Enter serial_number"
+            class="bt-input form-control"
+            type="text"
+            formControlName="serial_number"
+          />
+          <mat-error>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Serial number Required</mat-error>
+        </mat-form-field>
+        <mat-form-field class="full-length" style="width:300px ;" appearance="none">
+          <input
+            matInput
+            placeholder="Enter quantity"
+            class="bt-input form-control"
+            type="number" value="1"
+            formControlName="quantity"
+          />
+          <mat-error>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity Required</mat-error>
+        </mat-form-field>
+       
+        
+        <select formControlName="category" class="space form-control" style="width: 300px;">  
+            <option disabled>Select Category</option>  
+             
+           <option *ngFor="let web of categoryResponse">{{web.categoryName}}</option> 
+        </select>  
+        <mat-form-field class="full-length" style="width:300px ;" appearance="none">
+          <input
+            matInput
+            placeholder="Enter company"
+            class="bt-input form-control"
+            type="text"
+            formControlName="company"
+          />
+          <mat-error>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Company Required</mat-error>
+        </mat-form-field>
+        <mat-form-field class="full-length" style="width:300px ;" appearance="none">
+          <input
+            matInput
+            placeholder="Enter price"
+            class="bt-input form-control"
+            type="Number" value="1"
+            formControlName="price"
+          />
+          <mat-error>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price Required</mat-error>
+        </mat-form-field>
+        <mat-form-field class="full-length" style="width:300px ;" appearance="none">
+          <input
+            matInput
+            placeholder="Enter sub_category"
+            class="bt-input form-control"
+            type="text"
+            formControlName="sub_category"
+          />
+          <mat-error>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sub category Required</mat-error>
+        </mat-form-field>
+       </div>
+       </form>
+    </div>
+      <!-- <div class="row" style="background-color:#ebebeb ; height:100px ;">
+        <div class="col-xl-6">
+          <label class="form-label" for="customFile">Default file input example</label>
+            <input type="file" class="form-control" id="customFile" />
+      
+        
+        </div> -->
+        <div class="col-xl-6">
+        </div>
+      </div>
+      <div class="row" style="background-color:#ebebeb; height:100px ;">
+        <div class="space col-xl-6"><button  (click)="addProduct()" mat-raised-button class="btn blue-nav-btns pd-lt-10" style="left:20px;top: 10px; width: 50%; height:55px; color: white;">
+           Save
+        </button></div>
+        
+       
+  </div>
+ 
+<app-footer></app-footer>

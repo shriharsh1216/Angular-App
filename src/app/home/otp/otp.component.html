@@ -1,0 +1,55 @@
+<mat-dialog-content class="box" >
+  <div
+    class="row pd-20"
+    *ngIf="showFirstdiv == false"
+    [hidden]="showSeconddiv == true"
+  >
+    <div class="col">
+      <form [formGroup]="form1">
+        <mat-form-field class="full-length" appearance="none">
+          <span matPrefix>+91 &nbsp;</span>
+          <input
+            matInput
+            placeholder="Mobile Number*"
+            class="bt-input form-control"
+            type="text"
+            formControlName="mobileNo"
+            #box
+          />
+        </mat-form-field>
+        <button
+          mat-raised-button
+          (click)="continue(box.value)"
+          [disabled]="box.value.length === 0"
+          class="btn mt-20"
+        >
+          Continue
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="row pd-20" *ngIf="showSeconddiv == true">
+    <div class="col">
+      <h1>< Verify Number</h1>
+      <label>+91{{ mobileNovalue }}</label>
+      <p (click)="editNumber()"><u>Edit</u></p>
+      <input matInput id="partition" type="text" maxlength="4" /><br />
+      <label *ngIf="timeLeft > 0"
+        >Waiting for OTP in &nbsp; {{ timeLeft }}</label
+      >&nbsp;&nbsp;
+
+      <div *ngIf="timeLeft === 0">
+        <label> or didn't recieve answer? </label>
+        <p (click)="resendOtp()">
+          <a><u>Resend otp</u> </a>
+        </p>
+      </div>
+      <br /><br />
+      <button mat-raised-button class="btn">Verify</button>
+    </div>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close class="btn pd-lt-20">Cancel</button>
+</mat-dialog-actions>

@@ -1,0 +1,516 @@
+<div class="row mg-0">
+  <div class="col-lg-7">
+    <div class="row">
+      <div class="col-lg-12">
+        <mat-card class="name-card"
+          ><p class="name-text">
+            Organization Name<span class="greeting-text"
+              ><br />It's good to see you again.</span
+            >
+          </p>
+        </mat-card>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="title">
+          <span class="material-icons"> school </span>Enrolled Courses
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="row">
+          <div class="col-lg-4">
+            <mat-card class="top-card">
+              <mat-card-header>
+                <img
+                  mat-card-image
+                  class="top-img"
+                  src="./assets/images/aerial-view-business-data-analysis-graph_53876-13390_jpg_fdmdownload.jpg"
+                  alt="Design"
+                />
+              </mat-card-header>
+              <mat-card-content>
+                <p class="top-content">Business Skills</p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-button>
+                  <span class="material-icons"> perm_identity </span>50 Enrolled
+                </button>
+                <button mat-button>
+                  <span class="material-icons"> star </span>4.0 Rated
+                </button>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+          <div class="col-lg-4">
+            <mat-card class="top-card">
+              <mat-card-header>
+                <img
+                  mat-card-image
+                  class="top-img"
+                  src="./assets/images/aerial-view-business-data-analysis-graph_53876-13390_jpg_fdmdownload.jpg"
+                  alt="Design"
+                />
+              </mat-card-header>
+              <mat-card-content>
+                <p class="top-content">Business Skills</p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-button>
+                  <span class="material-icons"> perm_identity </span>50 Enrolled
+                </button>
+                <button mat-button>
+                  <span class="material-icons"> star </span>4.0 Rated
+                </button>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+          <div class="col-lg-4">
+            <mat-card class="top-card">
+              <mat-card-header>
+                <img
+                  mat-card-image
+                  class="top-img"
+                  src="./assets/images/graphic-design-concept-pastel-colors_52683-29881.jpg"
+                  alt="Design"
+                />
+              </mat-card-header>
+              <mat-card-content>
+                <p class="top-content">Communication Skills</p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-button>
+                  <span class="material-icons"> perm_identity </span>100
+                  Enrolled
+                </button>
+                <button mat-button>
+                  <span class="material-icons"> star </span>4.0 Rated
+                </button>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="row">
+          <div class="col-lg-12">
+            <mat-card class="employee-status-card">
+              <div class="row">
+                <div class="col-lg-12">
+                  <p class="subtitle">
+                    <span class="material-icons"> pie_chart </span>Employee
+                    Status
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <p>No of Employee Per Course</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-7">
+                  <!-- <div> -->
+                  <canvas
+                    width="200"
+                    baseChart
+                    [data]="doughnutChartData"
+                    [chartType]="doughnutChartType"
+                  ></canvas>
+                  <!-- </div> -->
+                </div>
+                <div class="col-lg-5">
+                  <div class="row">
+                    <div class="col-lg-12">Course 1:8</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">Course 2:7</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">Course 3:5</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">Course 4:9</div>
+                  </div>
+                </div>
+              </div>
+            </mat-card>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3">
+        <mat-card class="blue-card">
+          <p>Learn even More</p>
+          <p>Amazing Courses on your Intersted Topics</p>
+          <button mat-raised-button class="btn-yellow">Go to Courses</button>
+        </mat-card>
+      </div>
+      <div class="col-lg-5">
+        <div class="row">
+          <div class="col-lg-6">
+            <img
+              class="card-img"
+              src="./assets/images/7e2pe9wjL9M.png"
+              alt="Graphic design "
+            />
+          </div>
+          <div class="col-lg-6">
+            <img
+              class="card-img"
+              src="./assets/images/7e2pe9wjL9M.png"
+              alt="Graphic design "
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 pie-chart-card">
+        <div class="chart-wrapper">
+          <canvas
+            baseChart
+            width="400"
+            [data]="pieChartData"
+            [labels]="pieChartLabels"
+            [chartType]="pieChartType"
+            [options]="pieChartOptions"
+            [plugins]="pieChartPlugins"
+            [legend]="pieChartLegend"
+          >
+          </canvas>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="title">
+          <span class="material-icons"> signal_cellular_alt </span>Employee
+          Progress
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="row">
+          <div class="col-lg-6">
+            <mat-card class="assignments-card mg-4">
+              <div class="row">
+                <div class="col-lg-3">
+                  <span class="material-icons bg-yellow">
+                    indeterminate_check_box
+                  </span>
+                </div>
+                <div class="col-lg-9">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <p class="count">27</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <span class="count-completed">Employees</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </mat-card>
+          </div>
+          <div class="col-lg-6">
+            <mat-card class="assignments-card mg-4">
+              <div class="row">
+                <div class="col-lg-3">
+                  <span class="material-icons bg-yellow">
+                    indeterminate_check_box
+                  </span>
+                </div>
+                <div class="col-lg-9">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <p class="count">6.8</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <span class="count-completed"> Average mark</span>
+                    </div>
+                  </div>
+                </div>
+              </div></mat-card
+            >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <mat-card class="assignments-card mg-4">
+              <div class="row">
+                <div class="col-lg-3">
+                  <span class="material-icons bg-yellow">
+                    indeterminate_check_box
+                  </span>
+                </div>
+                <div class="col-lg-9">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <p class="count">25</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <span class="count-completed"> Assignments Done</span>
+                    </div>
+                  </div>
+                </div>
+              </div></mat-card
+            >
+          </div>
+          <div class="col-lg-6">
+            <mat-card class="assignments-card mg-4">
+              <div class="row">
+                <div class="col-lg-3">
+                  <span class="material-icons bg-yellow">
+                    indeterminate_check_box
+                  </span>
+                </div>
+                <div class="col-lg-9">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <p class="count">139</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <span class="count-completed">Total Hours spent</span>
+                    </div>
+                  </div>
+                </div>
+              </div></mat-card
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <mat-card class="progress-card mg-4">
+          <div class="row">
+            <div class="col-lg-6">
+              <p>Attendence</p>
+            </div>
+            <div class="col-lg-6">
+              <p>75%</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <mat-progress-bar
+                class="example-margin"
+                [color]="colorAttendence"
+                [mode]="modeAttendence"
+                [value]="valueAttendence"
+                [bufferValue]="bufferValueAttendence"
+              >
+              </mat-progress-bar>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <p>Assignments</p>
+            </div>
+            <div class="col-lg-6">
+              <p>20/12</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <mat-progress-bar
+                class="yellow-spinner"
+                [color]="colorAssignments"
+                [mode]="modeAssignments"
+                [value]="valueAssignments"
+                [bufferValue]="bufferValueAssignments"
+              >
+              </mat-progress-bar>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <p>Exams</p>
+            </div>
+            <div class="col-lg-6">
+              <p>10/7</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <mat-progress-bar
+                class="example-margin"
+                [color]="colorExams"
+                [mode]="modeExams"
+                [value]="valueExams"
+                [bufferValue]="bufferValueExams"
+              >
+              </mat-progress-bar>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-5 mg-12">
+    <div class="row">
+      <div class="col-lg-6">
+        <mat-card class="yellow-card">
+          <div class="row">
+            <div class="col-lg-5">
+              <p class="count1">27</p>
+            </div>
+            <div class="col-lg-7">
+              <div class="row">
+                <div class="col-lg-12">
+                  <p class="course">Total</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <p class="course">Employees</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <p class="count1">11</p> <p class="course">Courses Completed</p> -->
+        </mat-card>
+        <!-- <div class="row">
+                <div class="col-lg-3">
+                <p class="count-completed-count">11</p>
+                </div>
+                <div class="col-lg-8">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <p>courses</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <p>Completed</p>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+      </div>
+      <div class="col-lg-6">
+        <mat-card class="gray-card">
+          <div class="row">
+            <div class="col-lg-5">
+              <p class="count1">4</p>
+            </div>
+            <div class="col-lg-7">
+              <div class="row">
+                <div class="col-lg-12">
+                  <p class="course">Enrolled</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <span class="course">Courses</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <p class="count1">4 <span class="course">Courses in Progress</span></p> -->
+        </mat-card>
+      </div>
+    </div>
+    <div class="row mt-15">
+      <div class="col-lg-7">
+        <h1 class="title">Statistics</h1>
+        <p class="subtitle">
+          Learning Hours <span class="my-courses">Courses</span>
+        </p>
+      </div>
+      <div class="col-lg-5">
+        <mat-form-field floatLabel="never" appearance="legacy">
+          <mat-label>Weekly</mat-label>
+          <mat-select disableRipple class="select">
+            <mat-option value="1">1 hr</mat-option>
+            <mat-option value="2">2 hr</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div style="display: block">
+          <canvas
+            baseChart
+            width="400"
+            height="350"
+            [datasets]="lineChartData"
+            [labels]="lineChartLabels"
+            [options]="lineChartOptions"
+            [colors]="lineChartColors"
+            [legend]="lineChartLegend"
+            [chartType]="lineChartType"
+            [plugins]="lineChartPlugins"
+          >
+          </canvas>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="row">
+          <div class="col-lg-4">
+            <mat-card>
+              <mat-card-header>
+                <img
+                  mat-card-image
+                  class="top-img"
+                  src="./assets/images/aerial-view-business-data-analysis-graph_53876-13390_jpg_fdmdownload.jpg"
+                  alt="Design"
+                />
+              </mat-card-header>
+            </mat-card>
+          </div>
+          <div class="col-lg-4">
+            <mat-card>
+              <mat-card-header>
+                <img
+                  mat-card-image
+                  class="top-img"
+                  src="./assets/images/aerial-view-business-data-analysis-graph_53876-13390_jpg_fdmdownload.jpg"
+                  alt="Design"
+                />
+              </mat-card-header>
+            </mat-card>
+          </div>
+          <div class="col-lg-4">
+            <mat-card>
+              <mat-card-header>
+                <img
+                  mat-card-image
+                  class="top-img"
+                  src="./assets/images/aerial-view-business-data-analysis-graph_53876-13390_jpg_fdmdownload.jpg"
+                  alt="Design"
+                />
+              </mat-card-header>
+            </mat-card>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="row">
+          <div class="col-lg-12">
+            <mat-card class="blue-card">
+              <p>Go to Analytics</p>
+              <p>Check out more about employee In analytics section</p>
+              <button mat-raised-button class="btn-yellow">
+                Go to Analytics
+              </button>
+            </mat-card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

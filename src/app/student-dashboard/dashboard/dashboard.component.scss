@@ -1,0 +1,210 @@
+@import "../../../app.theme.scss";
+
+.mg-0 {
+  margin: 0;
+}
+:host {
+  ::ng-deep .mat-form-field-underline {
+    display: none;
+  }
+}
+
+.mat-select {
+  display: inline-block;
+  width: 62%;
+  outline: none;
+  background-color: lightgray;
+  border-radius: 5px;
+  height: 30px;
+  padding: 10px;
+}
+// .chart{
+//   display: block;
+// }
+.mg-4 {
+  margin: 4%;
+}
+.mt-15 {
+  margin-top: 15%;
+}
+.subtitle {
+  font-size: 1em;
+  font-weight: bold;
+  // padding: 2%;
+}
+.my-courses {
+  color: orangered;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 4%;
+}
+.name-card {
+  background-color: var(--blue);
+  padding: 70px;
+  border-radius: 39px;
+}
+.course-title {
+  font-size: 1em;
+}
+.courses-subtitle {
+  font-size: 0.9em;
+}
+.btn-continue {
+  background-color: var(--yellow);
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 1.4em;
+  border-radius: 10px;
+  margin-top: 1% !important;
+}
+.name-text {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+}
+.greeting-text {
+  font-size: 0.6em;
+  font-weight: bold;
+  color: white;
+}
+:host ::ng-deep .course-spinner {
+  size: 20px;
+}
+.course-row {
+  margin: 3% 10% 3% 6%;
+  background-color: lightgrey;
+  border-radius: 10px;
+  padding: 3%;
+}
+.course-title {
+  font-size: 1em;
+  font-weight: bold;
+}
+.courses-subtitle {
+  font-size: 1em;
+  font-weight: bold;
+}
+.progress-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0005),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 5%;
+  padding: 10px;
+}
+.assignments-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0005),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  // padding: 30px;
+  // margin: 3%;
+}
+.location-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0005),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  //padding: 30px;
+  // margin: 3%;
+}
+.count {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.count-completed {
+  font-size: 0.5em;
+  font-weight: bold;
+}
+// .progress-text {
+//   font-size: 1em;
+//   font-weight: bold;
+// }
+.blue-card {
+  background-color: var(--blue);
+  border-radius: 20px;
+  padding: 10px;
+}
+.card {
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0005),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-img {
+  border-radius: 20px;
+  object-fit: cover;
+}
+.main-text {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: white;
+}
+.yellow-card {
+  background-color: var(--yellow);
+  // padding: 22%;
+  border-radius: 18px;
+  // margin: 1% 2%;
+  margin-top: 15%;
+}
+.gray-card {
+  background-color: var(--light-gray);
+  // padding: 20%;
+  border-radius: 18px;
+  // margin: 1% 2%;
+  margin-top: 15%;
+}
+.small-image {
+  border-radius: 20px;
+  object-fit: cover;
+}
+.count1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+}
+.course {
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
+.sub-text {
+  font-size: 0.5em;
+  font-weight: bold;
+  color: white;
+}
+.btn-yellow {
+  background-color: var(--yellow);
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 0.7em;
+  border-radius: 5px;
+  //  margin-top: 1% !important;
+}
+.bg-cyan {
+  color: cyan;
+  font-size: 20px;
+  margin-top: 7%;
+}
+.bg-blue {
+  color: var(--blue);
+  font-size: 20px;
+  margin-top: 7%;
+}
+.bg-pink {
+  color: purple;
+  font-size: 20px;
+  margin-top: 7%;
+}
+.bg-yellow {
+  color: var(--yellow);
+  font-size: 20px;
+  margin-top: 7%;
+}

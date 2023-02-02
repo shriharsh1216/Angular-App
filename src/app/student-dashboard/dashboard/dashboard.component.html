@@ -1,0 +1,299 @@
+<div class="row">
+  <div class="col-lg-7">
+    <div class="row">
+      <div class="col-lg-12">
+        <mat-card class="name-card"
+          ><p class="name-text">
+            Heloo Rahul<span class="greeting-text"
+              >It's good to see you again.</span
+            >
+          </p></mat-card
+        >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="title">
+          <span class="material-icons"> school </span>Ongoing Courses
+        </div>
+      </div>
+    </div>
+    <div class="row course-row">
+      <div class="col-lg-2">
+        <img
+          src="./assets/images/rear-view-programmer-working-all-night-long_1098-18697.png"
+          width="60"
+          height="60"
+          class="small-image"
+          alt="img2"
+        />
+      </div>
+      <div class="col-lg-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="course-title">Web Development</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="course-subtitle">by Harshad Mehta</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <mat-spinner
+          [mode]="mode"
+          [color]="color"
+          [mode]="mode"
+          [value]="value"
+          aria-label="Rating"
+          strokeWidth="3"
+          [diameter]="50"
+        ></mat-spinner>
+      </div>
+      <div class="col-lg-3">
+        <button mat-raised-button class="btn-continue">Continue</button>
+      </div>
+    </div>
+    <div class="row course-row">
+      <div class="col-lg-2">
+        <img
+          src="./assets/images/aerial-view-business-data-analysis-graph_53876-13390_jpg_fdmdownload.jpg"
+          width="60"
+          height="60"
+          class="small-image"
+          alt="img2"
+        />
+      </div>
+      <div class="col-lg-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="course-title">Online Business</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="course-subtitle">by Ajay Kedia</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <mat-spinner
+          [color]="color"
+          [mode]="mode"
+          [value]="value"
+          aria-label="Rating"
+          strokeWidth="3"
+          [diameter]="50"
+        ></mat-spinner>
+      </div>
+      <div class="col-lg-3">
+        <button mat-raised-button class="btn-continue">Continue</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="title">
+          <span class="material-icons"> signal_cellular_alt </span>Progress
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-5">
+        <div style="display: block">
+          <canvas
+            baseChart
+            [data]="doughnutChartData"
+            [chartType]="doughnutChartType"
+          ></canvas>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <mat-card class="progress-card mg-4">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-lg-12">
+                  <span class="material-icons bg-cyan"> insert_chart </span
+                  >Total session 10
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <span class="material-icons bg-blue">
+                    indeterminate_check_box
+                  </span>
+                  Exams 20
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-lg-12">
+                  <span class="material-icons bg-pink"> text_snippet </span
+                  >Assignments 25
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <span class="material-icons bg-yellow"> watch_later </span>
+
+                  Total Hours 50
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <mat-card class="assignments-card mg-4">
+          <div class="row">
+            <div class="col-lg-3">
+              <span class="material-icons bg-yellow">
+                indeterminate_check_box
+              </span>
+            </div>
+            <div class="col-lg-9">
+              <div class="row">
+                <div class="col-lg-12">
+                  <p class="count">25</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <span class="count-completed"> Assignments Done</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+      <div class="col-lg-6">
+        <mat-card class="location-card mg-4">
+          <div class="row">
+            <div class="col-lg-3">
+              <span class="material-icons bg-cyan"> query_builder</span>
+            </div>
+            <div class="col-lg-9">
+              <div class="row">
+                <div class="col-lg-12">
+                  <p class="count">35</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <span class="count-completed"> Hour Spent on locations</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-5">
+    <div class="row">
+      <div class="col-lg-6">
+        <mat-card class="yellow-card">
+          <div class="row">
+            <div class="col-lg-5">
+              <p class="count1">11</p>
+            </div>
+            <div class="col-lg-7">
+              <div class="row">
+                <div class="col-lg-12">
+                  <p class="course">Courses</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <p class="course">completed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+      <div class="col-lg-6">
+        <mat-card class="gray-card">
+          <div class="row">
+            <div class="col-lg-5">
+              <p class="count1">4</p>
+            </div>
+            <div class="col-lg-7">
+              <div class="row">
+                <div class="col-lg-12">
+                  <p class="course">Courses</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <span class="course">in progress</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-7">
+        <h1 class="title">Your Statistics</h1>
+        <p class="subtitle">
+          Learning Hours <span class="my-courses">My Courses</span>
+        </p>
+      </div>
+      <div class="col-lg-5">
+        <mat-form-field floatLabel="never" appearance="legacy">
+          <mat-label>Weekly</mat-label>
+          <mat-select disableRipple class="select">
+            <mat-option value="1">1 hr</mat-option>
+            <mat-option value="2">2 hr</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div style="display: block">
+          <canvas
+            baseChart
+            width="400"
+            height="350"
+            [datasets]="lineChartData"
+            [labels]="lineChartLabels"
+            [options]="lineChartOptions"
+            [colors]="lineChartColors"
+            [legend]="lineChartLegend"
+            [chartType]="lineChartType"
+            [plugins]="lineChartPlugins"
+          >
+          </canvas>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 blue-card">
+        <p class="main-text">learn even more!</p>
+        <p class="sub-text">Amazing Courses on your Intersted Topics</p>
+        <button mat-raised-button class="btn-yellow">Go to Courses</button>
+      </div>
+      <div class="col-lg-4">
+        <img
+          class="card-img"
+          src="./assets/images/PDX_a_82obo.png"
+          alt="Graphic design "
+        />
+      </div>
+      <div class="col-lg-4">
+        <img
+          class="card-img"
+          src="./assets/images/7e2pe9wjL9M.png"
+          alt="Graphic design "
+        />
+      </div>
+    </div>
+  </div>
+</div>

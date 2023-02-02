@@ -1,0 +1,218 @@
+<app-nav></app-nav>
+<div class="row" style="background-color:#ebebeb ; height:50px ;"></div>
+<div class="row" style="background-color:#ebebeb ;">
+  
+  <button mat-raised-button class="btn blue-nav-btns pd-lt-20"style="width:500px;height: 55px; color: white;font-size:large;">Seller Info and Details</button>
+     
+
+</div>
+<form [formGroup]="detailsForm">
+<div class="row card-row" style="background-color: #ebebeb;">
+  <div class="col-lg-4" >
+    <h5>Company details</h5>
+    <div class="row">
+
+      <mat-form-field class="full-length" style="width:300px ;" appearance="none">
+                
+        <input
+          matInput
+          placeholder="Enter full name of the user"
+          class="bt-input form-control"
+          type="text"
+          formControlName="full_name"
+          
+          
+        />
+        
+        <mat-error> Name of the user is required</mat-error>
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-form-field class="full-length" style="width:300px ;" appearance="none">
+                
+        <input
+          matInput
+          placeholder="Industry category"
+          class="bt-input form-control"
+          type="text"
+          formControlName="industry_category"
+          
+          
+        />
+        
+        <mat-error>Industry category is required </mat-error>
+      </mat-form-field></div>
+    <div class="row">
+      <mat-form-field class="full-length" style="width:300px ;" appearance="none">
+                
+        <input
+          matInput
+          placeholder="Enter company name"
+          class="bt-input form-control"
+          type="text"
+          formControlName="company_name"
+          
+          
+        />
+        
+        <mat-error>&nbsp;&nbsp;&nbsp;&nbsp; company name Required</mat-error>
+      </mat-form-field></div>
+    <div class="row">
+      <mat-form-field class="full-length" style="width:300px ;" appearance="none">
+                
+        <input
+          matInput
+          placeholder="Enter industry type"
+          class="bt-input form-control"
+          type="text"
+          formControlName="industry_type"
+          
+          
+        />
+        
+        <mat-error>&nbsp;&nbsp;&nbsp;&nbsp; Industry type Required</mat-error>
+      </mat-form-field></div>
+    
+  </div>
+
+  <div class="col-lg-4">
+    <h5>Address details</h5>
+    <mat-form-field class="full-length" style="width:300px;" appearance="none">
+                
+      <input
+        matInput
+        placeholder="Street/ Nearby Landmark"
+        class="bt-input form-control"
+        type="text"
+        formControlName="street"
+        
+        
+      />
+      
+      <mat-error>&nbsp;&nbsp;&nbsp;&nbsp; Street/Nearby landmark</mat-error>
+    </mat-form-field>
+    <mat-form-field class="full-length" style="width:300px ;" appearance="none">
+                
+      <input
+        matInput
+        placeholder="City"
+        class="bt-input form-control"
+        type="text"
+        formControlName="city"
+        
+        
+      />
+      
+      <mat-error>&nbsp;&nbsp;&nbsp;&nbsp; 6Username Required</mat-error>
+    </mat-form-field>
+    <mat-form-field class="full-length" style="width:300px ;" appearance="none">
+                
+      <input
+        matInput
+        placeholder="State"
+        class="bt-input form-control"
+        type="text"
+        formControlName="state"
+        
+        
+      />
+      
+      <mat-error>&nbsp;&nbsp;&nbsp;&nbsp; 7Username Required</mat-error>
+    </mat-form-field>
+    <mat-form-field class="full-length" style="width:300px ;" appearance="none">
+                
+      <input
+        matInput
+        placeholder="Pin-code"
+        class="bt-input form-control"
+        type="text"
+        formControlName="pinCode"
+        
+        
+      />
+      
+      <mat-error>&nbsp;&nbsp;&nbsp;&nbsp; 8Username Required</mat-error>
+    </mat-form-field>
+
+  </div>
+  <div class="col-lg-4">
+    <h5>Bank details</h5>
+    <div class="row">
+      <mat-form-field class="full-length" style="width:300px ;margin-left:5% ;" appearance="none">
+                
+        <input
+          matInput
+          placeholder="Enter Bank name"
+          class="bt-input form-control"
+          type="text"
+          formControlName="bank_name"
+          
+          
+        />
+        
+        <mat-error>&nbsp;&nbsp;&nbsp;&nbsp; Bank name Required</mat-error>
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-form-field class="full-length" style="width:300px ;margin-left:5% ;" appearance="none">
+                
+        <input
+          matInput
+          placeholder="Enter Account number"
+          class="bt-input form-control"
+          type="text"
+          formControlName="acc_number"
+          
+          
+        />
+        
+        <mat-error>&nbsp;&nbsp;&nbsp;&nbsp; Account number Required</mat-error>
+      </mat-form-field></div>
+    <div class="row">
+      <mat-form-field class="full-length" style="width:300px ; margin-left:5% ;" appearance="none">
+                
+        <input
+          matInput
+          placeholder="Enter Branch name"
+          class="bt-input form-control"
+          type="text"
+          formControlName="branch_name"
+          
+          
+        />
+        
+        <mat-error>&nbsp;&nbsp;&nbsp;&nbsp; Branch name Required</mat-error>
+      </mat-form-field></div>
+    <div class="row">
+      <mat-form-field class="full-length" style="width:300px ; margin-left:5% ;" appearance="none">
+                
+        <input
+          matInput
+          placeholder="Enter Ifsc code"
+          class="bt-input form-control"
+          type="text"
+          formControlName="ifsc_code"
+          
+          
+        />
+        
+        <mat-error> Ifsc code Required</mat-error>
+      </mat-form-field></div>
+     
+    </div>
+
+    </div>
+    
+  </form>
+<!--Footer-->
+<br><br>
+<div class="row" style="top:25px ;">
+ 
+  <button  (click)="saveDetails()" class="btn blue-nav-btns pd-lt-20"style="width:150px;height: 55px; color: white; top:25px;  font-size:large;">Submit</button>
+      
+</div>
+<div class="row footer mg-0" style="margin-top:5%">
+      <button routerLink="" class="btn blue-nav-btns pd-lt-20"style="width:350px;height: 55px; color: white;font-size:large;">Profile</button>
+    
+      
+</div>

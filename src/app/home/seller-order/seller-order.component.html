@@ -1,0 +1,55 @@
+<ng-container >
+    <div class="container">
+        <div class="card-table">
+            <div class="cart-product">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                           
+                            <th>Product Id</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total Price</th>
+                            <th>User name</th>
+                            <th>Status</th>
+                            <th>Update Status</th>
+                           
+                           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of orderSellers">
+                            <!-- <td>{{i+1}}</td> -->
+                            <td style="width: 12%;">{{item.id}}</td>
+                            <th style="width: 12%;">{{item.price}}</th>
+                            <td style="width: 12%;">{{item.quantity}}</td>
+                            <td style="width: 12%;">{{item.totalPrice}}</td>
+                            <td style="width: 12%;">{{item.userName}}</td>
+                            <td style="width: 12%;">{{item.status}}</td>
+
+                            <select (change)="selectChangeHandler($event,item)" formControlName="website" class="form-control" [(ngModel)]="selectedTeam">  
+                                
+                                
+                                <option *ngFor="let web of websiteList">{{web}}</option>  
+                            </select>  
+                            <td>
+                                <button (click)="removeItem(item.id)" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                            </td>
+                          
+                            <td>
+                                <div class="col-xl-6 col-lg-6" style="justify-content:center ;">
+                                    <button mat-raised-button class="btn blue-nav-btns" style="color:black ; width:90% ;" (click)=goProducts(item.id)>Details</button>
+                            
+                                    
+                                </div>
+                            </td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</ng-container>
+
+

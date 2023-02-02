@@ -1,0 +1,19 @@
+@import "../../../app.theme.scss";
+.mg-0 {
+  margin: 0;
+}
+.name-card {
+  background-color: var(--blue);
+  padding: 70px;
+  border-radius: 39px;
+}
+.name-text {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+}
+.greeting-text {
+  font-size: 0.6em;
+  font-weight: bold;
+  color: white;
+}
