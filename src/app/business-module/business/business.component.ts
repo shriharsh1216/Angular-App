@@ -11,7 +11,7 @@ import {
 @Component({
   selector: 'app-business',
   templateUrl: './business.component.html',
-  styleUrls: ['./business.component.scss'],
+  styleUrls: ['./business.component.scss'], 
 })
 export class BusinessComponent implements OnInit {
   //for pie chart
