@@ -6,7 +6,7 @@ import {
   SingleDataSet,
   monkeyPatchChartJsLegend,
   monkeyPatchChartJsTooltip,
-} from 'ng2-charts';
+} from 'ng2-charts';    
 
 @Component({ 
   selector: 'app-business',
