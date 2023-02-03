@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartDataSets, ChartOptions } from 'chart.js';
 import { Color, Label } from 'ng2-charts';
-import { ProgressBarMode } from '@angular/material/progress-bar'; 
+import { ProgressBarMode } from '@angular/material/progress-bar';
 import {
   SingleDataSet,
   monkeyPatchChartJsLegend,
